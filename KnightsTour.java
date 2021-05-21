@@ -11,7 +11,7 @@ public class KnightsTour {
 	public static void main(String[] args) {
 		move(0,0,0);
 		steps();
-	}	
+	}
 
     // Print steps
 	public static void steps(){
@@ -24,7 +24,7 @@ public class KnightsTour {
                 }
 			}
 			System.out.println();
-		}	
+		}
     }
 
     // Check move validity
@@ -43,7 +43,7 @@ public class KnightsTour {
         ||(isValid(row-2,col-1) && move(row-2, col-1, step+1))
         ||(isValid(row-1,col-2) && move(row-1, col-2, step+1))
         ||(isValid(row+1,col-2) && move(row+1, col-2, step+1))
-        ||(isValid(row+2,col-1) && move(row+2, col-1, step+1))){
+        ||(isValid(row+2,col-1) && move(row+2, col-1, step+1))) {
             return true;
         } else{
             board[row][col] = 0;
